@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApiController;
-use App\Http\Controllers\KonsumenController;
+use App\Http\Controllers\PegawaiController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,6 +26,5 @@ Route::get('/', function () {
 
 Route::get('/movie_search', [ApiController::class, 'index']);
 Route::post('/movie_search', [ApiController::class, 'index'])->name('search.post');
-
-Route::get('/database', [KonsumenController::class, 'index'])->name('database');
+Route::get('/database', [PegawaiController::class, 'index'])->name('database');
 
